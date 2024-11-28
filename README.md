@@ -119,10 +119,6 @@ Proje içerisinde **5 farklı takım tipi** için kullanıcı girişi yapılabil
 
 Tüm ilişkili veriler, birbirinden bağımsız tablolarda oluşturulmuştur. Bu sayede dinamik olarak kullanıcılar, takımlar, parçalar ve diğer ilişkili veriler uygulama içerisinde kullanılabilir.
 
-## Görseller ve Videolar
-
-Proje ile ilgili geliştirmeler ve özelliklerin nasıl çalıştığına dair **görseller** ve **videolar** projenin repo kısmında mevcuttur. Bu görselleri inceleyerek uygulamanın fonksiyonelliği hakkında daha fazla bilgi edinebilirsiniz.
-
 ## Sonuç
 
 Uygulama, **JWT Token** tabanlı yetkilendirme ile güvenli bir kullanıcı deneyimi sunar. Superadmin kullanıcıları tüm işlemleri yapabilirken, personel sadece kendi yetkileri dahilinde işlem yapabilmektedir. Arayüzdeki özelleştirilmiş filtreler ve araçlar, kullanıcı deneyimini iyileştirir.
