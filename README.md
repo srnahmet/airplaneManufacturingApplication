@@ -10,12 +10,24 @@ Bu proje yaklaşık 2-3 gün içerisinde baştan sona yapılan bir DEMO envanter
 
 İyi günler dilerim!
 
+# Giriş
 ![Giriş](__ICERIK__/giris.png)
+---
+# Uçak Envanteri
 ![Uçak Envanteri](__ICERIK__/ucak_envanteri.png)
+---
+# Takımlar
 ![Takımlar](__ICERIK__/takimlar.png)
+---
+# Parça Üret ve Montajla
 ![Parça Üret ve Montajla](__ICERIK__/parca_uret_ve_montajla.png)
+---
+# Admin Panel
 ![Admin Paneli](__ICERIK__/admin_panel.png)
+---
+# Veritabanı Diyagramı
 ![Veritabanı Diyagramı](__ICERIK__/db_diagram.png)
+---
 
 ## Docker
 
