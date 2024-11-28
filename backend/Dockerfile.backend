@@ -1,0 +1,26 @@
+# Python tabanlı bir imaj kullanıyoruz
+FROM python:3.11.5
+
+# Çalışma dizinini oluşturuyoruz
+WORKDIR /app/backend
+
+# Projeyi konteyner içine kopyala
+COPY ./backend/requirements.txt /app/backend/
+
+# Gerekli bağımlılıkları yüklüyoruz
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Proje dosyalarını kopyalıyoruz
+COPY . .
+
+# PostgreSQL bağlantısı için environment variables ayarlıyoruz
+ENV DB_NAME=postgres
+ENV DB_USER=asirin
+ENV DB_PASSWORD=asirin
+ENV DB_HOST=db
+
+# Django'nun gerekli portunu açıyoruz
+EXPOSE 8000
+
+# Django server'ı çalıştırıyoruz
+CMD ["bash", "-c", "python manage.py migrate && python manage.py flush --noinput && python manage.py create_default_data && python manage.py runserver 0.0.0.0:8000"]

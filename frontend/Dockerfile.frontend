@@ -1,0 +1,23 @@
+# Node.js imajını kullanıyoruz
+FROM node:14.15.0
+
+# Çalışma dizinini frontend olarak belirliyoruz
+WORKDIR /app/frontend
+
+# package.json ve package-lock.json dosyalarını kopyalıyoruz
+COPY ./frontend/package*.json ./
+
+# Bağımlılıkları yüklüyoruz
+RUN npm install
+
+# Tüm frontend proje dosyalarını kopyalıyoruz
+COPY ./frontend ./
+
+# React uygulamasını derliyoruz
+RUN npm run build
+
+# 3000 portunu açıyoruz
+EXPOSE 3000
+
+# React uygulamasını çalıştırıyoruz
+CMD ["npm", "start"]

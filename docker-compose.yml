@@ -1,0 +1,45 @@
+version: '3.7'
+
+services:
+  # Django Service
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile.backend
+    container_name: django_backend
+    command: bash -c "python manage.py migrate && python manage.py flush --noinput && python manage.py create_default_data && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  # React Service
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile.frontend
+    container_name: react_frontend
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  # PostgreSQL Database
+  db:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: asirin
+      POSTGRES_USER: asirin
+      POSTGRES_PASSWORD: asirin
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
