@@ -2,13 +2,20 @@
 
 Merhaba,  
 
-Bu proje yaklaşık 2-3 gün içerisinde baştan sona yapılan bir DEMO envanter projesidir. Amacı birden fazla teknolojinin iç içe çalışabilme yeterliliklerinin görülebilmesi ve bir bakıma oluşan web uygulamasının POC anlamı taşımasıdır. 
+Bu proje yaklaşık 2-3 gün içerisinde baştan sona yapılan bir DEMO envanter projesidir. Amacı birden fazla teknolojinin iç içe çalışabilme yeterliliklerinin görülebilmesi ve oluşturulan web uygulamasının bir bakıma POC anlamı taşımasıdır. 
 
-İş yoğunluğumdan dolayı projeyi olabildiğince hızlı bir şekilde gerçekleştirdim. Bazı eksiklikler ve düzensizliklerin farkındayım :)
+İş yoğunluğumdan dolayı projeyi olabildiğince hızlı bir şekilde gerçekleştirdim. Bu sebeple Clean Code prensiplerine uyamadım. Bazı eksiklikler ve düzensizliklerin farkındayım :)
 
 **Uygulama içeriği hakkında görseller __ICERIK__ adlı klasör içerisinde mevcut.
 
 İyi günler dilerim!
+
+![Giriş](__ICERIK__/giris.png)
+![Uçak Envanteri](__ICERIK__/ucak_envanteri.png)
+![Takımlar](__ICERIK__/takimlar.png)
+![Parça Üret ve Montajla](__ICERIK__/parca_uret_ve_montajla.png)
+![Admin Paneli](__ICERIK__/admin_panel.png)
+![Veritabanı Diyagramı](__ICERIK__/db_diagram.png)
 
 ## Docker
 
