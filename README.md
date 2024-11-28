@@ -23,6 +23,8 @@ Bu proje yaklaşık 2-3 gün içerisinde baştan sona yapılan bir DEMO envanter
 ![Admin Paneli](__ICERIK__/admin_panel.png)
 # Veritabanı Diyagramı
 ![Veritabanı Diyagramı](__ICERIK__/db_diagram.png)
+# Swagger
+![Swagger](__ICERIK__/swagger.png)
 ---
 
 ## Docker
